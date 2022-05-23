@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-menu">
       <nav>
         <a href="#" class="logo"><span>Web</span>Studio</a>
         <ul class="site-nav list">
-          <li><a href="./index.html">Студия</a></li>
+          <li><a href="./">Студия</a></li>
           <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contact list">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
-        <ul>
-          <li><button type="button">Все</butoon></li>
-          <li><button type="button">Веб-сайты</butoon></li>
-          <li><button type="button">Приложения</butoon></li>
-          <li><button type="button">Дизайн</butoon></li>
-          <li><button type="button">Маркетинг</butoon></li>
+      <section class="portfolio">
+        <ul class="portfolio-filter list">
+          <li><button type="button" class="button active">Все</button></li>
+          <li><button type="button" class="button">Веб-сайты</button></li>
+          <li><button type="button" class="button">Приложения</button></li>
+          <li><button type="button" class="button">Дизайн</button></li>
+          <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
-        <ul>
+        <ul class="portfolio-projects list">
           <li>
             <img src="./images/portfolio/project1.jpg" alt="Технокряк" />
             <h2>Технокряк</h2>
@@ -80,10 +84,10 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">WebStudio</a>
+    <footer class="footer">
+      <a href="#" class="logo"><span>Web</span>Studio</a>
       <address>г. Киев, пр-т Леси Украинки, 26</address>
-      <ul>
+      <ul class="footer-contact list">
         <li><a href="mailto:info@example.com">info@example.com</a></li>
         <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
       </ul>
