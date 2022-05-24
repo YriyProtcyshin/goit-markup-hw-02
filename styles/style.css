@@ -1,23 +1,10 @@
-/* 
-цвет основной     #212121; 
-цвет вторичный    #757575;
-цвет акцента      #2196F3;
-белый цвет        #FFFFFF;
-
-цвет фона         #FFFFFF;
-вторич цвет фон   #F5F4FA;
-цвет футтера      #2F303A;
-*/
-
 :root {
   --background-color: #ffffff;
   --main-color: #757575; /* основной цвет текста */
-  --second-color: #212121; /* вторичный цвет текста (цвет заголовков) */
+  --headings-color: #212121; /* вторичный цвет текста (цвет заголовков) */
   --accent-color: #2196f3; /* цвет акцента  и основной цвет кнопки)   */
-  /* --accent-botton: #188ce8; цвет акцента кнопки */
   --white-color: #ffffff;
-  --background-banner-color: #2f303a;
-  --background-footer-color: #2f303a;
+  --second-background-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -39,7 +26,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--headings-color);
 }
 .logo span {
   color: var(--accent-color);
@@ -58,12 +45,13 @@ body {
 }
 
 .site-nav a {
-  color: var(--second-color);
+  color: var(--headings-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+/* contact list */
 .contact a {
   font-weight: 500;
   font-size: 14px;
@@ -79,11 +67,11 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--headings-color);
 }
 /* banner */
 .banner {
-  background-color: var(--background-banner-color);
+  background-color: var(--second-background-color);
 }
 .banner-title {
   font-weight: 900;
@@ -113,7 +101,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-color);
+  color: var(--headings-color);
 }
 
 .features-list {
@@ -141,7 +129,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--headings-color);
 }
 
 /* portfolio */
@@ -153,7 +141,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: var(--headings-color);
   background-color: #f5f4fa;
 }
 
@@ -167,7 +155,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--second-color);
+  color: var(--headings-color);
 }
 .portfolio p {
   font-weight: 400;
@@ -180,7 +168,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: var(--background-footer-color);
+  background-color: var(--second-background-color);
 }
 .footer .logo {
   color: var(--white-color);
