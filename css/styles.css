@@ -1,7 +1,7 @@
 :root {
   --background-color: #ffffff;
   --main-color: #757575; /* основной цвет текста */
-  --headings-color: #212121; /* вторичный цвет текста (цвет заголовков) */
+  --heading-color: #212121; /* вторичный цвет текста (цвет заголовков) */
   --accent-color: #2196f3; /* цвет акцента  и основной цвет кнопки)   */
   --white-color: #ffffff;
   --second-background-color: #2f303a;
@@ -26,7 +26,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--headings-color);
+  color: var(--heading-color);
 }
 .logo span {
   color: var(--accent-color);
@@ -45,7 +45,7 @@ body {
 }
 
 .site-nav a {
-  color: var(--headings-color);
+  color: var(--heading-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -67,7 +67,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--headings-color);
+  color: var(--heading-color);
 }
 /* banner */
 .banner {
@@ -83,6 +83,7 @@ body {
   color: var(--white-color);
 }
 .banner-button {
+  cursor: pointer;
   background-color: var(--accent-color);
   border-color: var(--accent-botton);
   font-weight: 700;
@@ -101,11 +102,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--headings-color);
+  color: var(--heading-color);
 }
 
 .features-list {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -115,7 +115,6 @@ body {
 /* our team */
 
 .our-team p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -129,11 +128,12 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--headings-color);
+  color: var(--heading-color);
 }
 
 /* portfolio */
 .portfolio-filter .button {
+  cursor: pointer;
   border: none;
   font-family: inherit;
   font-weight: 500;
@@ -141,13 +141,14 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--headings-color);
+  color: var(--heading-color);
   background-color: #f5f4fa;
 }
 
-.portfolio .button.active {
+.portfolio .button:hover,
+.portfolio .button:focus {
+  background-color: var(--accent-color);
   color: var(--white-color);
-  background: #2196f3;
 }
 
 .portfolio-projects h2 {
@@ -155,10 +156,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--headings-color);
+  color: var(--heading-color);
 }
 .portfolio p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -175,17 +175,19 @@ body {
   text-decoration: none;
 }
 .footer address {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
 .footer-contact a {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
   text-decoration: none;
+}
+.footer-contact a:hover,
+.footer-contact a:focus {
+  color: var(--accent-color);
 }
